@@ -1,0 +1,27 @@
+{
+    "name": "Bookmark Flow",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "A bookmark tool to sync your bookmark between Google Chrome and Microsoft Edge based on Github Gist",
+    "icons": {
+      "16": "icons/bf16x16.png",
+      "32": "icons/bf32x32.png",
+      "48": "icons/bf48x48.png",
+      "128": "icons/bf128x128.png"
+    },
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_title": "Bookmark Flow",
+      "default_icon": "icons/bf128x128.png"
+    },
+    "permissions": [
+      "bookmarks",
+      "storage",
+      "notifications",
+      "alarms"
+    ],
+    "background": {
+      "service_worker": "js/background.js",
+      "type":"module"
+    }
+  }
