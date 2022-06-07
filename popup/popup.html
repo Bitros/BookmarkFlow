@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Bookmark Flow</title>
-  <head >
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8" />
-    <style>
-      body {
-        width: 500px;
-      }
-      input {
-        color: rgb(0, 0, 0);
-        text-align: left;
-        font-size: 16px;
-        padding-left: 3px;
-      }
+<title>Bookmark Flow</title>
 
-    </style>
-  </head>
-  <body>
-    <h1>Enter your Github profile below</h1>
-    <table>
-        <tr>
-            <td><label for="gh_token">Token:</label></td>
-            <td colspan="2"><input id="gh_token"/><br/></td>
-        </tr>
-        <tr>
-          <td><label for="interval">Interval:</label></td>
-          <td colspan="2"><input id="interval"/><br/></td>
-        </tr>
-        <tr>
-            <td  colspan="2" align='right'>
-              <button id="sync_now" type="button">Sync Now</button>
-              <button id="save_gh_profile" type="button">Save</button>
-            </td>
-        </tr>
-    </table>
-    <script src="popup.js"></script>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <style>
+    button {
+     width: 80px;
+     border-width:1px;
+    }
+    .self{
+      margin-top: 10px;
+    }
+    #save_gh_profile{
+      margin-left: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <fieldset>
+
+    <legend>Extension Configuration</legend>
+    <div class="self">
+      <label for="gh_token">GitHub Token</label><br />
+      <input id="gh_token" /><br />
+    </div>
+    <div class="self">
+      <label for="interval">Interval</label><br />
+      <input id="interval" /><br />
+    </div>
+    <div class="self">
+      <button id="sync_now" type="button">Sync Now</button>
+      <button id="save_gh_profile" type="button">Save</button>
+    </div>
+  </fieldset>
+  <script src="popup.js"></script>
+</body>
+
 </html>
