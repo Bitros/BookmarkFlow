@@ -1,6 +1,6 @@
 A Chromium extension which can synchronize your bookmarks between Google Chrome and Microsoft Edge. You need a GitHub account before using this extension because it uses GitHub Gist as a medium storage. Then generate a personal access token and maker sure it has full Gist access.
 
-Of course, you stil need to install this extension in both Google Chrome and Microsoft Edge.
+Of course, you still need to install this extension in both Google Chrome and Microsoft Edge.
 
 GitHub token refers to https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token.
 
